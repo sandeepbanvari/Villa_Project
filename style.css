@@ -136,7 +136,7 @@ section {
 
 .menu li a.active {
   color: #f35525;
-  
+
 }
 
 /* BUTTONS */
@@ -437,6 +437,7 @@ section {
   padding: 100px 0;
   background-color: #fafafa;
   margin: 0px 0;
+
 }
 
 .best-deal .heading {
@@ -639,6 +640,7 @@ section {
 .black-button:hover {
   background-color: #f35525;
 }
+
 /* ===================================================================== */
 /* CONTACT SECTION */
 .contact {
@@ -651,6 +653,7 @@ section {
   margin: 0;
   position: relative;
 }
+
 /* ==================================================================== */
 .contact .heading h2 {
   color: #fff;
@@ -660,7 +663,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top:100px;
+  margin-top: 100px;
   position: relative;
   margin: 10px;
 }
@@ -787,7 +790,9 @@ section {
   }
 
   /* Sections */
-  .featured-left, .featured-middle, .featured-right {
+  .featured-left,
+  .featured-middle,
+  .featured-right {
     width: 100%;
     float: none;
     padding: 0;
@@ -852,11 +857,17 @@ section {
     font-size: 14px;
   }
 
-  .deal-info, .deal-image, .deal-text {
+  .deal-info,
+  .deal-image,
+  .deal-text {
     width: 100%;
     float: none;
     padding: 0;
     margin-bottom: 40px;
+  }
+
+  .deal-info {
+    padding: 15px 30px;
   }
 
   .deal-image img {
@@ -871,14 +882,16 @@ section {
   }
 
   /* Contact (Home & Page) */
-  .contact-layout, .cp-layout {
+  .contact-layout,
+  .cp-layout {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     padding: 0;
   }
 
-  .contact, .cp-section {
+  .contact,
+  .cp-section {
     margin: 0;
     padding: 40px 0;
   }
@@ -888,7 +901,8 @@ section {
     margin-bottom: 30px;
   }
 
-  .contact-map, .contact-form {
+  .contact-map,
+  .contact-form {
     width: 100%;
   }
 
@@ -915,7 +929,8 @@ section {
     padding: 10px 20px;
   }
 
-  .left-content, .right-sidebar {
+  .left-content,
+  .right-sidebar {
     width: 100%;
     float: none;
   }
@@ -936,14 +951,6 @@ section {
     margin-top: 30px;
   }
 
-  /* Contact Page Banner */
-  .cp-banner {
-    padding: 80px 0;
-  }
-
-  .cp-banner h1 {
-    font-size: 32px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -980,25 +987,10 @@ section {
     padding: 80px 0 180px 0;
   }
 
-  .contact, .cp-section {
-    padding: 40px 0;
-    margin: 0;
-  }
 
-  .cp-heading h2 {
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
 
-  .cp-info-part p {
-    margin-bottom: 30px;
-  }
-
-  .cp-info-card-box h4 {
-    font-size: 18px;
-  }
-
-  .contact-layout, .cp-layout {
+  .contact-layout,
+  .cp-layout {
     padding: 0 15px;
   }
 
@@ -1022,38 +1014,163 @@ section {
   .details-section {
     padding: 60px 0;
   }
+}
 
-  .cp-info-part, .cp-form-part {
+/* ==============================
+   CONTACT PAGE RESPONSIVE CSS
+============================== */
+
+@media (max-width: 768px) {
+
+  /* Banner */
+  .cp-banner {
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .cp-banner h1 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .cp-path {
+    font-size: 14px;
+  }
+
+  /* Main Section */
+  .cp-section {
+    padding: 50px 15px;
+  }
+
+  .cp-layout {
+    display: block;
+  }
+
+  /* Left Info Part */
+  .cp-info-part {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+
+  .cp-heading h6 {
+    font-size: 16px;
+  }
+
+  .cp-heading h2 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 10px 0 20px;
+  }
+
+  .cp-info-part p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  /* Contact Cards */
+  .cp-info-card-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .cp-info-card-box img {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+
+  .cp-text h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .cp-text p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  /* Form Part */
+  .cp-form-part {
     width: 100%;
     float: none;
   }
 
-  .cp-form-part {
-    margin-top: 50px;
-    padding: 30px;
+  .cp-form-part form {
+    padding: 20px;
+    border-radius: 10px;
   }
 
-  .cp-info-card-box {
-    padding: 25px;
+  .cp-field {
+    margin-bottom: 18px;
+  }
+
+  .cp-field label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .cp-field input,
+  .cp-field textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  .cp-field textarea {
+    height: 130px;
+    resize: none;
+  }
+
+  .black-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  /* Map */
+  .cp-map-area {
+    margin-top: 40px;
   }
 
   .cp-map-area iframe {
-    height: 350px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
   }
 
-  /* Contact Page Banner */
-  .cp-banner {
-    padding: 60px 0;
-  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
 
   .cp-banner h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
-  .cp-path {
-    font-size: 13px;
-    padding: 3px 10px;
+  .cp-heading h2 {
+    font-size: 24px;
+    line-height: 34px;
   }
+
+  .cp-info-card-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cp-info-card-box img {
+    margin: 0 0 10px;
+  }
+
 }
 
 /* ========================================================================= */
@@ -1149,7 +1266,8 @@ section {
   font-weight: 600;
 }
 
-.pagination a.active, .pagination a:hover {
+.pagination a.active,
+.pagination a:hover {
   background-color: #f35525;
 }
 
@@ -1157,7 +1275,7 @@ section {
 /* ===========================PROPERTY DETAILS PAGE========================= */
 /* ========================================================================= */
 
-/* 6. BANNER Area */
+/* BANNER Area */
 .banner {
   background-image: url('../Assets/page-heading-bg.jpg');
   background-size: cover;
@@ -1170,8 +1288,11 @@ section {
 .banner::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
 }
 
@@ -1216,7 +1337,7 @@ section {
   height: 500px;
   border-radius: 5px;
   margin-bottom: 40px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   object-fit: cover;
 }
 
@@ -1250,7 +1371,7 @@ details {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -1276,7 +1397,7 @@ details p {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid #eee;
 }
 
@@ -1367,7 +1488,7 @@ details p {
   width: 45%;
 }
 
-.cp-info-part p{
+.cp-info-part p {
   margin-bottom: 18px;
 }
 
@@ -1389,7 +1510,7 @@ details p {
   background-color: #fff;
   padding: 35px;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 35px;
   overflow: hidden;
   border: 1px solid #eee;
@@ -1420,7 +1541,7 @@ details p {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cp-field {
@@ -1435,7 +1556,8 @@ details p {
   font-weight: 500;
 }
 
-.cp-field input, .cp-field textarea {
+.cp-field input,
+.cp-field textarea {
   width: 100%;
   padding: 15px;
   background-color: #f6f6f6;
@@ -1456,5 +1578,5 @@ details p {
   height: 500px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
