@@ -188,7 +188,7 @@ section {
 
 /* HERO SECTION */
 .hero {
-  background-image: url(../Assets/banner-01.jpg);
+  background-image: url(./Assets/banner-01.jpg);
   background-size: cover;
   background-position: center;
   padding: 240px 0;
@@ -332,7 +332,7 @@ section {
 
 /* VIDEO SECTION */
 .video-section {
-  background-image: url('../Assets/video-bg.jpg');
+  background-image: url('./Assets/video-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 120px 0 250px 0;
@@ -356,7 +356,7 @@ section {
 }
 
 .video-content {
-  background-image: url('../Assets/video-frame.jpg');
+  background-image: url('./Assets/video-frame.jpg');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -645,7 +645,7 @@ section {
 /* CONTACT SECTION */
 .contact {
   padding: 100px 0 150px 0;
-  background-image: url('../Assets/contact-bg.jpg');
+  background-image: url('./Assets/contact-bg.jpg');
   /* height: 700px; */
   background-size: cover;
   background-position: center;
@@ -1179,7 +1179,7 @@ section {
 
 /*  BANNER Area */
 .banner {
-  background-image: url('../Assets/page-heading-bg.jpg');
+  background-image: url('./Assets/page-heading-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 120px 0;
@@ -1277,7 +1277,7 @@ section {
 
 /* BANNER Area */
 .banner {
-  background-image: url('../Assets/page-heading-bg.jpg');
+  background-image: url('./Assets/page-heading-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 120px 0;
@@ -1429,7 +1429,7 @@ details p {
 
 /* 6. BANNER Area (Contact Page) */
 .cp-banner {
-  background-image: url('../Assets/page-heading-bg.jpg');
+  background-image: url('./Assets/page-heading-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 120px 0;
