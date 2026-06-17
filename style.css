@@ -1592,7 +1592,7 @@ details p {
     color: #1e1e1e;
 }
 
-/* Responsive */
+/* Tablet Responsive Styles */
 @media (max-width: 768px) {
 
     .menu-toggle {
@@ -1647,6 +1647,8 @@ details p {
     margin-bottom: 20px;
   }
 }
+
+/* Mobile Responsive Styles */
 @media (max-width: 480px) {
   .hero {
     padding: 100px 0;
