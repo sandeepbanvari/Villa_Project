@@ -32,15 +32,24 @@
     <header class="header">
         <div class="container clear">
             <a href="index.html" class="logo">VILLA</a>
-            <nav class="nav clear">
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav clear" id="navbar">
                 <ul class="menu">
-                    <li><a href="index.html"  class="active">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="properties.html">Properties</a></li>
                     <li><a href="property-details.html">Property Details</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+
                 <a href="#" class="schedule-btn">
-                    <div class="round-icon"><i class="fa-solid fa-calendar"></i></div>
+                    <div class="round-icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
                     Schedule a visit
                 </a>
             </nav>
@@ -358,11 +367,7 @@
         <p>Copyright &copy; 2048 Villa Agency Co., Ltd. All rights reserved. Design: BANVARI SANDEEP</p>
     </footer>
 
-    <script>
-        document.querySelector('.mobile-nav-toggle').addEventListener('click', function () {
-            document.querySelector('.nav').classList.toggle('active');
-        });
-    </script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
