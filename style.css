@@ -890,8 +890,7 @@ section {
     padding: 0;
   }
 
-  .contact,
-  .cp-section {
+  .contact {
     margin: 0;
     padding: 40px 0;
   }
@@ -1038,9 +1037,7 @@ section {
   }
 
   /* Main Section */
-  .cp-section {
-    padding: 50px 15px;
-  }
+  
 
   .cp-layout {
     display: block;
@@ -1136,42 +1133,8 @@ section {
     border-radius: 6px;
   }
 
-  /* Map */
-  .cp-map-area {
-    margin-top: 40px;
-  }
-
-  .cp-map-area iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-  }
-
 }
 
-
-/* Small Mobile */
-@media (max-width: 480px) {
-
-  .cp-banner h1 {
-    font-size: 26px;
-  }
-
-  .cp-heading h2 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  .cp-info-card-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .cp-info-card-box img {
-    margin: 0 0 10px;
-  }
-
-}
 
 /* ========================================================================= */
 /* ===============================PROPERTIES PAGE=========================== */
@@ -1472,10 +1435,10 @@ details p {
 /* ===============================CONTACT PAGE=========================== */
 /* ========================================================================= */
 
-.cp-section {
+/* .cp-section {
   padding: 20px 0;
   margin: 10px 100px;
-}
+} */
 
 .cp-layout {
   overflow: hidden;
@@ -1646,6 +1609,9 @@ details p {
     padding: 5px 12px;
     margin-bottom: 20px;
   }
+
+
+  
   .featured .container {
     display: flex;
     flex-direction: column;
@@ -1845,11 +1811,98 @@ details p {
   .video-content img{
     width: 100%;
   }
+
+  /* Properties Page */
+  .banner,.cp-banner {
+    padding: 60px 15px;
+  }
+
+  .banner h1, .cp-banner h1 {
+    font-size: 26px;
+  }
+  .details-section{
+    padding: 20px 0px;
+  }
+  .clearfix{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-content,.right-sidebar{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .right-content{
+    width: 100%;
+  }
+  .house-title{
+    font-size: 24px;
+    margin: 0px;
+  }
+  .faq-box{
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .faq-box summary{
+    padding: 10px;
+  }
+  .info-list{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 35px;
+  }
+  .info-row{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+    gap: 20px;
+  }
+  .info-row h4{
+    font-size: 18px;
+  }
   .footer{
     padding: 20px 20px;
 
   }
   .footer{
     padding: 20px 20px;
+  }
+
+  /* Contact Page */
+  .cp-layout{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    margin: 50px 0;
+  }
+  .cp-layout h2{
+    font-size: 24px;
+    margin: 0px 0 30px;
+  }
+  .cp-info-part{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cp-info-card-box{
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .cp-map-area{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .cp-map-area iframe{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .cp-form-part{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .cp-form-part form{
+    padding: 10px;
+    margin: 0;
   }
 }
